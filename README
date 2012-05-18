@@ -1,168 +1,22 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title>围脖是个好图床</title>
-	<style>
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6,
-	p,
-	blockquote {
-	    margin: 0;
-	    padding: 0;
-	}
-	body {
-	    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-	    font-size: 13px;
-	    line-height: 18px;
-	    color: #737373;
-	    margin: 10px 13px 10px 13px;
-	}
-	a {
-	    color: #0069d6;
-	}
-	a:hover {
-	    color: #0050a3;
-	    text-decoration: none;
-	}
-	a img {
-	    border: none;
-	}
-	p {
-	    margin-bottom: 9px;
-	}
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-	    color: #404040;
-	    line-height: 36px;
-	}
-	h1 {
-	    margin-bottom: 18px;
-	    font-size: 30px;
-	}
-	h2 {
-	    font-size: 24px;
-	}
-	h3 {
-	    font-size: 18px;
-	}
-	h4 {
-	    font-size: 16px;
-	}
-	h5 {
-	    font-size: 14px;
-	}
-	h6 {
-	    font-size: 13px;
-	}
-	hr {
-	    margin: 0 0 19px;
-	    border: 0;
-	    border-bottom: 1px solid #ccc;
-	}
-	blockquote {
-	    padding: 13px 13px 21px 15px;
-	    margin-bottom: 18px;
-	    font-family:georgia,serif;
-	    font-style: italic;
-	}
-	blockquote:before {
-	    content:"\201C";
-	    font-size:40px;
-	    margin-left:-10px;
-	    font-family:georgia,serif;
-	    color:#eee;
-	}
-	blockquote p {
-	    font-size: 14px;
-	    font-weight: 300;
-	    line-height: 18px;
-	    margin-bottom: 0;
-	    font-style: italic;
-	}
-	code, pre {
-	    font-family: Monaco, Andale Mono, Courier New, monospace;
-	}
-	code {
-	    background-color: #fee9cc;
-	    color: rgba(0, 0, 0, 0.75);
-	    padding: 1px 3px;
-	    font-size: 12px;
-	    -webkit-border-radius: 3px;
-	    -moz-border-radius: 3px;
-	    border-radius: 3px;
-	}
-	pre {
-	    display: block;
-	    padding: 14px;
-	    margin: 0 0 18px;
-	    line-height: 16px;
-	    font-size: 11px;
-	    border: 1px solid #d9d9d9;
-	    white-space: pre-wrap;
-	    word-wrap: break-word;
-	}
-	pre code {
-	    background-color: #fff;
-	    color:#737373;
-	    font-size: 11px;
-	    padding: 0;
-	}
-	textarea{
-		height:60px;width:80%;
-		padding:5px;
-		line-height:150%;
-		border:none;
-		box-shadow:0 0 3px #333 inset;
-		resize:none;
-	}
-	@media screen and (min-width: 768px) {
-	    body {
-	        width: 700px;
-	        margin:10px 0 10px 10%;
-	    }
-	}
-	</style>
-</head>
-<body>
-	<h1>
-		<a href="javascript:void(function(){var%20d%20=%20document,a%20=%20'setAttribute',s%20=%20d.createElement('script');s[a]('tyle','text/javascript');s[a]('src','http://weibotuchuang.sinaapp.com/bookmark.js');d.head.appendChild(s);})();" title="围脖是个好图床">围脖是个好图床</a>
-		<span>Bookmark App</span>
-	</h1>
+#围脖是个好图床 Bookmark App#
+貌似围脖真的是个好图床。但是上传是不是挺麻烦的么？可能有时候就想上传张图片贴在某个论坛里就不管了。这张图片的出处啊，存哪里啊什么的都没什么意义。那么你可以使用下 _围脖是个好图床_ 这个小应用。
 
-	<p>貌似围脖真的是个好图床。但是上传是不是挺麻烦的么？
-	可能有时候就想上传张图片贴在某个论坛里就不管了。这张图片的出处啊，存哪里啊什么的都没什么意义。那么你可以使用下 <em>围脖是个好图床</em> 这个小应用。</p>
-	<hr>
-	<p>拖拽上面的标题或者，这下面的链接到收藏栏。</p>
+-------
 
-	<p>
-		<a href="javascript:void(function(){var%20d%20=%20document,a%20=%20'setAttribute',s%20=%20d.createElement('script');s[a]('tyle','text/javascript');s[a]('src','http://weibotuchuang.sinaapp.com/bookmark.js');d.head.appendChild(s);})();" title="围脖是个好图床">围脖是个好图床</a>
-		  &lt;&mdash; 拖拽到收藏栏</p>
+点击下面体验效果：
 
-	<p>或者复制下面的内容存到收藏。</p>
+<http://weibotuchuang.sinaapp.com>
 
-	<textarea readonly="readonly"  onmouseover="this.select()" onfocus="this.select()">javascript:void(function(){var%20d%20=%20document,a%20=%20'setAttribute',s%20=%20d.createElement('script');s[a]('tyle','text/javascript');s[a]('src','http://weibotuchuang.sinaapp.com/bookmark.js');d.head.appendChild(s);})();</textarea>
-	<p></p>
-	<hr>
-	<p>PS. 所有上传的图片会传到 @围脖是个好图床 下。这个围脖没有关注和被关注。各位请不要没事关注这个用户。如果你显着硬要去关注页没办法。</p>
-	<p>PPS. 请不要连续上传同一张图或者传什么很和谐图。谢谢合作</p>
-	<p>PPPS. 应用本体在<a href="http://weibotuchuang.sinaapp.com">http://weibotuchuang.sinaapp.com</a></p>
-	<hr>
-	<p>感谢：</p>
-	<p>感谢 党和国家</p>
-	<p>感谢 渣浪围脖和sae</p>
-	<p>感谢 karonl <a href="http://karonl.com/">http://karonl.com/</a> php代码几乎是用的微博图床Beta2</p>
-	<p>感谢 @围脖是个好图床</p>
-	<p>感谢 MOU 这个文档的mou写导出的</p>
-	<p>感谢 朱一</p>
-	<script src="http://weibotuchuang.sinaapp.com/bookmark.js" type="text/javascript" charset="utf-8"></script>
-</body>
-</html>
+-------
++ PS. 所有上传的图片会传到 @围脖是个好图床 下。这个围脖没有关注和被关注。各位请不要没事关注这个用户。如果你显着硬要去关注页没办法.
++ PPS. 请不要连续上传同一张图或者传什么很和谐图。谢谢合作
++ PPPS. 应用本体在 <http://weibotuchuang.sinaapp.com>
+
+--------
++ 感谢：
++ 感谢 党和国家
++ 感谢 渣浪围脖和sae
++ 感谢 karonl <http://karonl.com/> php代码几乎是用的微博图床Beta2
++ 感谢 @围脖是个好图床
++ 感谢 MOU 这个文档的mou写导出的
++ 感谢 朱一
