@@ -1,0 +1,11 @@
+WeiboPic Beta2
+上传文件到能运行PHP的主机上，一般就可以这样使用了。
+
+但你可以更改为自己的通过App Key和App Secret关系到来源问题。可以在http://open.weibo.com登记创建应用得到App Key和App Secret(config.php本程序已填写，可更改)
+
+再用得到的App Key和App Secret通过http://dddc.sinaapp.com/zhuang.php（一个快速授权工具）来得到相应账号的应用授权。
+
+把得到的4个密匙填写到config.php中，登陆首页index.php即可。
+
+注：建议验证的微博账户为新申请的微博账户，因为上传的图片会以微博信息的形式展示在微博列表，以免对无端上传对博友造成不便，同样，你可以登陆新账户来查看上传的图片记录。
+本程序只是将上传到微博得到图片地址的原理做成方便的程序而已，SDK服务器支持等为新浪公司
