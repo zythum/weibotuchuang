@@ -22,8 +22,7 @@
 	
 	
 	c = document.createElement('div');
-	c.innerHTML = '关闭';
-	// ';height:25px;box-shadow:0 0 2px #333;position:absolute;top:0;left:-40px;line-height:25px;padding:0;margin:0;border-radius:0;border:none;background:#515151;z-index:99999;text-align:center;color:#aaa;cursor:pointer;';
+	c.innerHTML = '&#x5173;&#x95ED';//关闭
 	c.style.cssText = [
 		 ''
 		,'width:40px'
@@ -46,7 +45,6 @@
 	c.addEventListener('click',clickHandler);
 
 	d = document.createElement('div');
-	//'width:250px;height:250px;box-shadow:0 0 10px #333;position:fixed;top:0;right:0;z-index:1000000;font-family:arial,sans-serif;padding:0;margin:0;border-radius:0;background:#515151;';	
 	d.style.cssText = [
 		 ''
 		 ,'width:250px'
