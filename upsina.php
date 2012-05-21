@@ -2,8 +2,8 @@
 header('Content-Type:text/html;charset=utf-8'); 
 session_start();
 include_once( 'oauth.php' );
-include_once( 'config'.rand(1,3).'.php' );
-// include_once( 'config3.php' );
+// include_once( 'config'.rand(1,3).'.php' );
+include_once( 'config.php' );
 
 $c = new WeiboClient( WB_AKEY , 
                       WB_SKEY , 
