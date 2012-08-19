@@ -48,15 +48,15 @@
 			display: none;
 		}
 		.rs-btn{
-			height:50px;
+			height:45px;
 			position: absolute;
 			bottom:0;left:0;right:0;
 		}
 		.rs-top{
 			position: absolute;
-			top:10px;bottom:60px;left:10px;right:10px;	
+			top:10px;bottom:55px;left:10px;right:10px;	
 		}
-		.rs-top-va-outer{
+                .rs-top-va-outer{
 			text-align: center;
 			width: 100%;
 			height: 100%;
@@ -69,12 +69,12 @@
 		#rs-img{
 			max-height:100%;
 			max-width:100%;
-			border:1px solid #ddd;
+            		border-radius:5px;
 			background:#fff;
 		}
 		#rs-text{
 			background-color: #eee;
-			padding: 10px 3px;
+			padding: 8px 3px;
 			font-size: 16px;
 			border: none;
 			box-shadow:0 0 3px #333 inset;
@@ -89,12 +89,12 @@
 			width:20px;height:20px;line-height:20px;text-align:center;
 			cursor: pointer;
 		}
-		.about{
+                .about{
 			position: absolute;
 			bottom:0;left:0;right:0;height:25px;
 			line-height:25px;text-align:center;
-			font-size:10px;
-			color:#666;
+                        font-size:10px;
+            		color:#666;
 		}
 	</style>
 </head>
@@ -107,17 +107,17 @@
 	</div>
 	<div id="rs">
 		<div class="rs-top">
-			<!-- <div class="rs-top-va-outer"> -->
-				<!-- <span class="rs-top-va-inner"> -->
+                  	<!--<div class="rs-top-va-outer">-->
+				<!--<span class="rs-top-va-inner">-->
 					<img src="" id="rs-img"/>
-				<!-- </span> -->
-			<!-- </div>		 -->
-		</div>		
-		<div class="rs-btn"><input type="text" id="rs-text" readonly="readonly" onmouseover="this.select()" onfocus="this.select()"/></div>
+				<!--</span>-->
+			<!--</div>-->
+		</div>				
+		<div class="rs-btn"><input type="text" id="rs-text" readonly="readonly" onclick="this.select()" onmouseover="this.select()" onfocus="this.select()"/></div>
 		<div id="rs-close">x</div>
 	</div>
-	<div class="about">
-		感谢微博 | code by zythum_朱一
+        <div class="about">
+		感谢渣浪微博 | code by zythum_朱一
 	</div>
 	<script type="text/javascript">	
 	var drag = document.getElementById('drag');	
@@ -135,28 +135,32 @@
 	var upLoadUrl  = 'upsina.php';
 	var upLoadFlag = true;
 	
-	var upLoad = function(file){
+	var upLoad = function(file, text){
 		var xhr = new XMLHttpRequest();
 		var url = upLoadUrl;
 		var data;
-
 		//check
 		if(upLoadFlag === false){
 			alert('正在上传文件');
 			return false;
 		}
-		if(!file){
+		if(!file && !text){
 			alert('文件不存在,请重试');
 			return false;
 		}
-		if(file.type.indexOf('image') === -1){
+		if(file && file.type.indexOf('image') === -1){
 			alert('文件不是图片格式,请重试');
 			return false;
 		}	
+		if(text && !/^http/i.test(text)){
+			alert('图片地址必须http打头');
+			return false;
+		}
 
 		//upload
 		data = new FormData();
-		data.append('my_uploaded_file', file);
+		file && data.append('my_uploaded_file', file);
+		text && data.append('my_uploaded_url', text);
 		xhr.open("POST", url);
 		xhr.onreadystatechange = function(){
 			var rsText;			
@@ -173,10 +177,13 @@
 		dragT.innerHTML = t2;
 	}
 	var dropHandler = function(e){
-		var file;
+		var file,text;
 		e.preventDefault();
-		file = e.dataTransfer.files[0];
-		upLoad(file);
+		text = e.dataTransfer.getData && e.dataTransfer.getData('text/html');
+		text = text.match(/src\=\"(http.*?)\"/i);
+		text = text && text[1];
+		file = e.dataTransfer.files && e.dataTransfer.files[0];
+		upLoad(file, text);
 	}
 	var inputFileHandler = function(){
 		var file = dragF.files[0];

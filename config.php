@@ -1,6 +1,8 @@
 <?php
-define( "WB_AKEY" , '2073372834' );
-define( "WB_SKEY" , 'a1b3a54dfb7692655ce832fc80b8272f' );
-$_SESSION['last_key']['oauth_token'] ="161c67caf268c074711bb301b845288d";
-$_SESSION['last_key']['oauth_token_secret']="be5e8f87ed33837c359eeb1d36f0c232";
-?>
+header('Content-Type: text/html; charset=UTF-8');
+
+define( "WB_AKEY" , '你的appkey' ); //appkey
+define( "WB_SKEY" , '你的secretkey' ); //secretkey
+define( "WB_CALLBACK_URL" , 'http://weibotuchuang.sinaapp.com/callback.php' );//你的callback地址
+
+define( "VERSION" , '201208021858' );

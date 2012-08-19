@@ -13,14 +13,14 @@
 		d = i = c = null;
 		delete window.weibotuchuangbyzythum;				
 	}
-
+	
 	i = document.createElement('iframe');
 	i.setAttribute('width','250');
 	i.setAttribute('height','250');
 	i.style.cssText = ';border:none;';
 	i.src = 'http://weibotuchuang.sinaapp.com';
-
-		
+	
+	
 	c = document.createElement('div');
 	c.innerHTML = '&#x5173;&#x95ED';//关闭
 	c.style.cssText = [
